@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Scripts2\BlockFaust.cs" />
      <Compile Include="Assets\Scripts\Scripts2\Destroy.cs" />
      <Compile Include="Assets\Scripts\Scripts2\Dissable_trigger_on_player_exit.cs" />
      <Compile Include="Assets\Scripts\Scripts2\GlobalStateManage.cs" />

@@ -17,13 +17,13 @@ public class Player_ : MonoBehaviour
 
     private Rigidbody rigidBody;
     private Transform myTransform;
-    private Animator animator;
+   
     // Start is called before the first frame update
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
         myTransform = transform;
-        animator = myTransform.Find("PlayerModel").GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class Player_ : MonoBehaviour
 
     private void UpdateMovement()
     {
-        animator.SetBool("Walking", false);
+        
 
         if (!canMove)
         {
@@ -56,26 +56,26 @@ public class Player_ : MonoBehaviour
         { //Up movement
             rigidBody.velocity = new Vector3(rigidBody.velocity.x, rigidBody.velocity.y, moveSpeed);
             myTransform.rotation = Quaternion.Euler(0, 0, 0);
-            animator.SetBool("Walking", true);
+            
         }
         if (Input.GetKey(KeyCode.A))
         { //Left movement
             rigidBody.velocity = new Vector3(-moveSpeed, rigidBody.velocity.y, rigidBody.velocity.z);
             myTransform.rotation = Quaternion.Euler(0, 270, 0);
-            animator.SetBool("Walking", true);
+            
         }
         if (Input.GetKey(KeyCode.S))
         { //Down movement
             rigidBody.velocity = new Vector3(rigidBody.velocity.x, rigidBody.velocity.y, -moveSpeed);
             myTransform.rotation = Quaternion.Euler(0, 180, 0);
-            animator.SetBool("Walking", true);
+            
         }
 
         if (Input.GetKey(KeyCode.D))
         { //Right movement
             rigidBody.velocity = new Vector3(moveSpeed, rigidBody.velocity.y, rigidBody.velocity.z);
             myTransform.rotation = Quaternion.Euler(0, 90, 0);
-            animator.SetBool("Walking", true);
+            
         }
         if (canDropBombs && (Input.GetKeyDown(KeyCode.Space) ))
         { //Drop Bomb. gracz z wsadem używa spacji,bo blisko i pod ręką
@@ -88,28 +88,28 @@ public class Player_ : MonoBehaviour
         { //Up movement
             rigidBody.velocity = new Vector3(rigidBody.velocity.x, rigidBody.velocity.y, moveSpeed);
             myTransform.rotation = Quaternion.Euler(0, 0, 0);
-            animator.SetBool("Walking", true);
+            
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         { //Left movement
             rigidBody.velocity = new Vector3(-moveSpeed, rigidBody.velocity.y, rigidBody.velocity.z);
             myTransform.rotation = Quaternion.Euler(0, 270, 0);
-            animator.SetBool("Walking", true);
+            
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         { //Down movement
             rigidBody.velocity = new Vector3(rigidBody.velocity.x, rigidBody.velocity.y, -moveSpeed);
             myTransform.rotation = Quaternion.Euler(0, 180, 0);
-            animator.SetBool("Walking", true);
+            
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         { //Right movement
             rigidBody.velocity = new Vector3(moveSpeed, rigidBody.velocity.y, rigidBody.velocity.z);
             myTransform.rotation = Quaternion.Euler(0, 90, 0);
-            animator.SetBool("Walking", true);
+            
         }
 
         if (canDropBombs && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return)))
