@@ -6,6 +6,12 @@ public class GlobalStateManage : MonoBehaviour
 {
     private int deadPlayers = 0;
     private int deadPlayerNumber = -1;
+
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void PlayerDied(int playerNumber)
     {
         deadPlayers++; // 1
@@ -37,6 +43,7 @@ public class GlobalStateManage : MonoBehaviour
         {
             Debug.Log("The game ended in a draw!");
         }
+
     }
     // A single player died and he's the loser.
     //Player 1 died so Player 2 is the winner.

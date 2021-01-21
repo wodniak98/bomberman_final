@@ -59,7 +59,9 @@
      <Compile Include="Assets\Scripts\Scripts2\Destroy.cs" />
      <Compile Include="Assets\Scripts\Scripts2\Dissable_trigger_on_player_exit.cs" />
      <Compile Include="Assets\Scripts\Scripts2\GlobalStateManage.cs" />
+     <Compile Include="Assets\Scripts\Scripts2\Menu.cs" />
      <Compile Include="Assets\Scripts\Scripts2\Player_.cs" />
+     <Compile Include="Assets\Scripts\Scripts2\Restart.cs" />
      <Compile Include="Assets\Scripts\Scripts2\bomb.cs" />
      <Compile Include="Assets\Scripts\archiwum oryginalnych skryptów\DestroySelf.cs" />
      <Compile Include="Assets\Scripts\archiwum oryginalnych skryptów\DisableTriggerOnPlayerExit.cs" />

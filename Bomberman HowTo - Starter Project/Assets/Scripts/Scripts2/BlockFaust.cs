@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class BlockFaust : MonoBehaviour
 {
-    public bool dead = false;
-    // Start is called before the first frame update
-    void Start()
+    
+    /*public void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+        if (other.CompareTag("Explosion"))
+        {
+            Destroy(gameObject);
+        }
+    }*/
+    void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("On collision Enter", collision.gameObject);
+        if (collision.gameObject.CompareTag("Explosion"))
+        {
         
+            GetComponent<MeshRenderer>().enabled = true;
+            Destroy(gameObject);
+        }
     }
 }

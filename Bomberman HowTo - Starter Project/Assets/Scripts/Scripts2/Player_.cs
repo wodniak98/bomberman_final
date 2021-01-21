@@ -11,7 +11,7 @@ public class Player_ : MonoBehaviour
     public bool canDropBombs = true;
     public bool canMove = true;
     public bool dead = false;
-    private int bombs = 2; 
+    
 
     public GameObject bombPrefab;
 
