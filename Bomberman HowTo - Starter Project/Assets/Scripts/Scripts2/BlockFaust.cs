@@ -18,7 +18,7 @@ public class BlockFaust : MonoBehaviour
         if (collision.gameObject.CompareTag("Explosion"))
         {
         
-            GetComponent<MeshRenderer>().enabled = true;
+            GetComponent<MeshRenderer>().enabled = false;
             Destroy(gameObject);
         }
     }

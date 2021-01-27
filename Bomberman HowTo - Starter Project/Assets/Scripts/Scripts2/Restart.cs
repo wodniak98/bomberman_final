@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class Restart : MonoBehaviour
 {
     // Start is called before the first frame update
-   public void RestartGame ()
+   public void LoadMenu ()
     {
-        SceneManager.LoadScene(0);
+        Debug.Log("Jeszcze raz");
+        SceneManager.LoadScene("Menu-Start");
+        Time.timeScale=1f;
     }
 }

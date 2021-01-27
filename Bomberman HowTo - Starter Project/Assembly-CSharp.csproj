@@ -60,13 +60,31 @@
      <Compile Include="Assets\Scripts\Scripts2\Dissable_trigger_on_player_exit.cs" />
      <Compile Include="Assets\Scripts\Scripts2\GlobalStateManage.cs" />
      <Compile Include="Assets\Scripts\Scripts2\Menu.cs" />
+     <Compile Include="Assets\Scripts\Scripts2\Over.cs" />
      <Compile Include="Assets\Scripts\Scripts2\Player_.cs" />
      <Compile Include="Assets\Scripts\Scripts2\Restart.cs" />
      <Compile Include="Assets\Scripts\Scripts2\bomb.cs" />
-     <Compile Include="Assets\Scripts\archiwum oryginalnych skryptów\DestroySelf.cs" />
      <Compile Include="Assets\Scripts\archiwum oryginalnych skryptów\DisableTriggerOnPlayerExit.cs" />
      <Compile Include="Assets\Scripts\archiwum oryginalnych skryptów\GlobalStateManager.cs" />
      <Compile Include="Assets\Scripts\archiwum oryginalnych skryptów\Player.cs" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/bomberman_final/Bomberman HowTo - Starter Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
